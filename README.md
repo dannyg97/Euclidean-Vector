@@ -45,7 +45,6 @@ This library uses the default destructors.
 |----|----|----|----|
 | Equal | ```	bool operator==(const EuclideanVector&, const EuclideanVector&)``` | True if the two vectors are equal in the number of dimensions and the magnitude in each dimension is equal. | ```a == b;``` |
 | Not Equal | ```	bool operator!=(const EuclideanVector&, const EuclideanVector&)``` | True if the two vectors are not equal in the number of dimensions or the magnitude in each dimension is not equal. | ```a != b;``` |
-| Subscript | ```operator[]``` | Allows to get and set the value in a given dimension of the Euclidean Vector. Const and non-const versions of this function exist. | ```double a {b[1]};``` |
 | Addition | ```EuclideanVector operator+(const EuclideanVector&, const EuclideanVector&)``` | For adding vectors of the same dimension. | ```a = b + c;``` |
 | Subtraction | ```EuclideanVector operator-(const EuclideanVector&, const EuclideanVector&)``` | For subtracting vectors of the same dimension. | ```a = b - c;``` |
 | Multiplication | ```double operator*(const EuclideanVector&, const EuclideanVector&)``` | For dot-product multiplication, returns a double. E.g., [1 2] * [3 4] = 1 * 3 + 2 * 4 = 11 | ```double c {a * b};``` |
